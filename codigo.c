@@ -403,7 +403,7 @@ void ILS(Grafo *g, int *ordenado, int num_tarefas, int num_maquinas, int **distr
   clock_t fim = clock();
   printf("m: %d\nFO: %d\n t: %.2f \n", num_maquinas, melhor_fo, ((double)(fim - inicio)) / CLOCKS_PER_SEC);
 
-  //salvar_dados(num_maquinas, melhor_fo,((double)(fim - inicio)) / CLOCKS_PER_SEC);
+  salvar_dados(num_maquinas, melhor_fo,((double)(fim - inicio)) / CLOCKS_PER_SEC);
 }
 
 int main(int argc, char *argv[]) {
